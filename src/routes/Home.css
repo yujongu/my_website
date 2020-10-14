@@ -1,0 +1,14 @@
+.body {
+  height: 100%;
+}
+.circular_img {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile__image {
+  width: 100%;
+  height: auto;
+}

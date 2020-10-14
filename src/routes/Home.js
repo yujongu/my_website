@@ -3,7 +3,15 @@ import "./Home.css";
 function Home() {
   return (
     <div className="body">
-      <h1>Joey</h1>
+      <div className="circular_img">
+        <img
+          className="profile__image"
+          src="/img/profile_picture.jpeg"
+          alt="Profile"
+          title="Profile"
+          draggable="false"
+        />
+      </div>
     </div>
   );
 }

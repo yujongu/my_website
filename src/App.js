@@ -1,42 +1,28 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
-import Unsplash, { toJson } from "unsplash-js";
-
 import Home from "./routes/Home";
 import "./App.css";
 
 global.fetch = fetch;
-const accKey = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
-const secKey = process.env.REACT_APP_UNSPLASH_SECRET_KEY;
-
-const unsplash = new Unsplash({
-  accessKey: accKey,
-  secret: secKey,
-});
 
 class App extends React.Component {
-  fetchImage = () => {
-    unsplash.photos
-      .getRandomPhoto({
-        orientation: "landscape",
-      })
-      .then(toJson)
-      .then((json) => {
-        console.log(json.urls);
-        var main = document.getElementById("main");
-        main.style.backgroundImage = `url(${json.urls.full})`;
-        main.style.backgroundSize = "100%, auto";
-      });
+  setBackgroundImage = () => {
+    var a = Math.floor(Math.random() * 5);
+    var body = document.getElementById("main");
+    body.style.backgroundImage = `linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),url(/img/background_img/${a + 1}.jpg)`;
+    body.style.backgroundSize = "100%, 100%";
   };
-
   componentDidMount() {
-    this.fetchImage();
+    this.setBackgroundImage();
   }
 
   render() {
     return (
       <HashRouter>
-        <Route path="/" exact={true} component={Home} />c
+        <Route path="/" exact={true} component={Home} />
       </HashRouter>
     );
   }
