@@ -35,7 +35,7 @@ function Home() {
       <div className="circular_img">
         <img
           className="profile__image"
-          src="/img/sample_profile_picture.jpeg"
+          src="/img/profile_picture.jpeg"
           alt="Profile"
           title="Profile"
           draggable="false"

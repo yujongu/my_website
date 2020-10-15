@@ -29,7 +29,10 @@
 
   font-size: 30px;
   font-weight: 200;
-  animation: rollDown-left-top 1s ease-in-out;
+  opacity: 0;
+
+  animation: rollDown-left-top 1s ease-in-out forwards;
+  animation-delay: 3s;
 }
 
 @keyframes rollDown-left {
@@ -49,7 +52,10 @@
 
   font-size: 30px;
   font-weight: 200;
-  animation: rollDown-left 1s ease-in-out;
+  opacity: 0;
+
+  animation: rollDown-left 1s ease-in-out forwards;
+  animation-delay: 2.5s;
 }
 
 @keyframes rollDown-left-bottom {
@@ -71,7 +77,21 @@
 
   font-size: 30px;
   font-weight: 200;
-  animation: rollDown-left-bottom 1s ease-in-out;
+  opacity: 0;
+
+  animation: rollDown-left-bottom 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes rollDown-right-top {
+  from {
+    transform: translateX(-50px) translateY(-100px) scale(1.1) rotateZ(-50deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) translateY(0px) scale(1) rotateZ(-25deg);
+    opacity: 1;
+  }
 }
 
 .nav__right-top {
@@ -82,6 +102,21 @@
 
   font-size: 30px;
   font-weight: 200;
+  opacity: 0;
+
+  animation: rollDown-right-top 1s ease-in-out forwards;
+  animation-delay: 3s;
+}
+
+@keyframes rollDown-right {
+  from {
+    transform: translateX(-10px) translateY(-130px) scale(1.1) rotateZ(-25deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) translateY(0px) scale(1);
+    opacity: 1;
+  }
 }
 
 .nav__right {
@@ -90,6 +125,21 @@
 
   font-size: 30px;
   font-weight: 200;
+  opacity: 0;
+
+  animation: rollDown-right 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes rollDown-right-bottom {
+  from {
+    transform: translateX(50px) translateY(-60px) scale(1.1) rotateZ(10deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) translateY(0px) scale(1) rotateZ(25deg);
+    opacity: 1;
+  }
 }
 
 .nav__right-bottom {
@@ -100,4 +150,8 @@
 
   font-size: 30px;
   font-weight: 200;
+  opacity: 0;
+
+  animation: rollDown-right-bottom 1s ease-in-out forwards;
+  animation-delay: 2s;
 }

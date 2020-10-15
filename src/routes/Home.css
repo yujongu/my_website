@@ -6,6 +6,33 @@
   align-items: center;
 }
 
+@keyframes profile-popup {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  90% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .circular_img {
   position: absolute;
   width: 500px;
@@ -13,6 +40,7 @@
 
   border-radius: 50%;
   overflow: hidden;
+  animation: profile-popup 1.5s ease-out;
 }
 .profile__image {
   width: 100%;
