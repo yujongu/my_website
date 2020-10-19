@@ -23,8 +23,8 @@
 }
 .nav__left-top {
   position: relative;
-  right: 30px;
-  bottom: 80px;
+  right: 105px;
+  bottom: 100px;
   transform: rotate(25deg);
 
   font-size: 30px;
@@ -48,7 +48,7 @@
 
 .nav__left {
   position: relative;
-  right: 300px;
+  right: 320px;
 
   font-size: 30px;
   font-weight: 200;
@@ -71,8 +71,8 @@
 
 .nav__left-bottom {
   position: relative;
-  right: 85px;
-  top: 80px;
+  right: 125px;
+  top: 100px;
   transform: rotate(-25deg);
 
   font-size: 30px;

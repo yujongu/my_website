@@ -1,0 +1,12 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+  overflow: auto;
+}
+
+img {
+  height: 100vh;
+  width: auto;
+}
